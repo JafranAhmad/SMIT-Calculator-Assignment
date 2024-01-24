@@ -7,7 +7,6 @@ let eqaul_btn = document.querySelector("#eql");
 btn.forEach((click) => {
   click.addEventListener("click", function () {
     inp.value += this.textContent;
-    formatInputValue();
   });
 });
 del_btn.addEventListener("click", function () {
@@ -20,7 +19,3 @@ reset_btn.addEventListener("click", function () {
   inp.value = "";
 });
 
-function formatInputValue() {
-  let numericValue = parseInt(inp.value.replace(/,/g, ""), 10); // Remove existing commas and convert to a number
-  inp.value = numericValue.toLocaleString(); // Format with commas
-}
