@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calc-cont">
+      <div class="heading">
+        <p>Calc</p>
+        <p>🔴🟢🔵</p>
+      </div>
+      <div class="input-area">
+        <div class="input-field">
+          <input type="text" id="input" disabled/>
+        </div>
+      </div>
+      <div class="body-content">
+        <table>
+            <tbody>
+          <tr>
+            <td><button class="button">7</button></td>
+            <td><button class="button">8</button></td>
+            <td><button class="button">9</button></td>
+            <td><button id="delete">DEL</button></td>
+          </tr>
+          <tr>
+            <td><button class="button">4</button></td>
+            <td><button class="button">5</button></td>
+            <td><button class="button">6</button></td>
+            <td><button class="button">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="button">1</button></td>
+            <td><button class="button">2</button></td>
+            <td><button class="button">3</button></td>
+            <td><button class="button" id="sub">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="button" id="dot">.</button></td>
+            <td><button class="button">0</button></td>
+            <td><button class="button" id="divi">/</button></td>
+            <td><button class="button" id="multi">*</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button id="reset">RESET</button></td>
+            <td colspan="2"><button id="eql">=</button></td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="static/script.js"></script>
+  </body>
+</html>
